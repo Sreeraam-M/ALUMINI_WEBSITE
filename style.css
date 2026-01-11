@@ -1,3 +1,15 @@
+#map-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+
+  background-image: url("./assets/world-map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .marker {
   position: absolute;
   background: radial-gradient(circle, #ffb347, #ff7a18);
