@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <div id="pageTitle">MEMBERS LOCATION</div>
-  <title>Alumni Location</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/three"></script>
-  <script src="https://unpkg.com/globe.gl"></script>
-  <script src="locationMap.js"></script>
-  <script src="globe.js" defer></script>
+  <meta charset="UTF-8" />
+  <title>Alumni Around the World</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div id="globeContainer">
-    <div id="globeViz"></div>
-    <div id="countryList">
-      <h3>Alumni Countries</h3>
-      <ul id="countryItems"></ul>
-    </div>
+
+<section class="map-section">
+  <h1>Our Alumni Across the World</h1>
+  <p class="subtitle">Different paths. Same roots.</p>
+
+  <div id="map-container"></div>
+
+  <div id="info-panel" class="hidden">
+    <h2 id="country-title"></h2>
+    <ul id="alumni-list"></ul>
   </div>
+</section>
+
+<script src="js/countryCenters.js"></script>
+<script src="js/sheetFetch.js"></script>
+<script src="js/dataGroup.js"></script>
+<script src="js/mapLogic.js"></script>
+
 </body>
 </html>
